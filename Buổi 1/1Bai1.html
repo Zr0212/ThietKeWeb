@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {background-color: #f7f2eb; padding: 5%;}
+        h1, h2, h3, h4, h5, h6 {color: #081f5c;}
+        h2, h3, h4, h5, h6 {color: #081f5c; margin-left: 20px;}
+        p {color: #081f5c; margin-left: 40px;}
+        code {color: #e68c3a;}
+        table, th, td {border:1px solid #081f5c; color: #081f5c;}
+        ul, ol, li {color: #081f5c;}
+        hr {border-width: 2px; border-style: dashed; color: #081f5c;}
+    </style>
+    <title>Bai1</title>
+</head>
+<body>
+    <h1>I. HTML basic</h1>
+        <h2>1. Ý nghĩa thẻ</h2>
+            <p>Tất cả các tài liệu HTML phải bắt đầu bằng khai báo loại tài liệu: <code>&lt;DOCTYPE html&gt;</code>.<br>
+                Bản thân tài liệu HTML bắt đầu bằng <code>&lt;html&gt;</code> và kết thúc bằng <code>&lt;/html&gt;</code>.<br>
+                Phần hiển thị của tài liệu HTML nằm giữa <code>&lt;body&gt;</code> và <code>&lt;/body&gt;</code>.
+            </p>
+        <h2>2. Ví dụ minh họa</h2>
+            <p>
+                <code>&lt;DOCTYPE html&gt;</code><br>
+                <code >&lt;html&gt;</code><br>
+                <code style="margin-left: 40px;">&lt;/head&gt;</code><br>
+                <code style="margin-left: 60px;">Content in the head tag.</code><br>
+                <code style="margin-left: 40px;">&lt;/head&gt;</code><br>
+                <code style="margin-left: 40px;">&lt;body&gt;</code><br>
+                <code style="margin-left: 60px;">Content in the body tag.</code><br>
+                <code style="margin-left: 40px;">&lt;body&gt;</code><br>
+                <code >&lt;/html&gt;</code><br>
+            </p><hr>
+    <h1>II. HTML Elements</h1>
+        <h2>1. Ý nghĩa</h2>
+            <p>HTML đánh dấu nội dung với các thẻ (tag) HTML.<br>
+                <code>&lt;tagname&gt; content &lt;/tagname&gt;</code><br>
+                Một số thẻ tự đóng, tức là chúng không cần một thẻ đóng:<br>
+                <code>&lt;selfclosing&gt; content</code>
+            </p>
+        <h2>2. Ví dụ minh họa</h2>
+            <p>
+                <code >&lt;title&gt; Tiêu đề trang &lt;/title&gt;</code>
+            </p><hr>
+    <h1>III. HTML Attributes</h1>
+        <h2>1. Ý nghĩa</h2>
+            <p>
+                Tất cả các thẻ HTML có thể có 'thuộc tính' cung cấp thông tin thêm về một phần tử cụ thể. Thuộc tính luôn được đặt trong thẻ mở của một phần tử và tồn tại dưới dạng cặp khóa/giá trị. Các giá trị luôn được đặt trong dấu ngoặc kép (có thể là dấu nháy đơn hoặc kép, nhưng thường là dấu nháy kép).<br>
+                <code>&lt;tagname attritibute = "value"&gt; content &lt;/tagname&gt;</code>
+            </p>
+        <h2>2. Ví dụ minh họa</h2>
+            <p>
+                <a href="https://www.w3schools.com/html/html_attributes.asp"><code>&lt;a href="https://www.w3schools.com/html/html_attributes.asp">HTML Attributes&lt;/a&gt;</code></a>
+            </p><hr>
+    <h1>IV. HTML Headings</h1>
+        <h2>1. Ý nghĩa</h2>
+            <p>
+                Tiêu đề HTML là tiêu đề hoặc phụ đề mà bạn muốn hiển thị trên trang web.
+            </p>
+        <h2>2. Ví dụ minh họa</h2>
+            <p>
+                <h1 style="margin-left: 20px;"><code>&lt;h1&gt;heading 1&lt;/h1&gt;</code></h1>
+                <h2><code>&lt;h2&gt;heading 2&lt;/h2&gt;</code></h2>
+                <h3><code>&lt;h3&gt;heading 3&lt;/h3&gt;</code></h3>
+                <h4><code>&lt;h4&gt;heading 4&lt;/h4&gt;</code></h4>
+                <h5><code>&lt;h5&gt;heading 5&lt;/h5&gt;</code></h5>
+                <h6><code>&lt;h6&gt;heading 6&lt;/h6&gt;</code></h6>
+            </p><hr>
+    <h1>V. HTML Paragraphs</h1>
+        <h2>1. Ý nghĩa</h2>
+            <p>
+                Đoạn văn luôn bắt đầu trên một dòng mới và thường là một khối văn bản.
+            </p>
+        <h2>2. Ví dụ minh họa</h2>
+            <p>
+                <code>&lt;p</code>&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt sed elit vitae rhoncus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque bibendum ipsum diam, sit amet viverra sapien laoreet sed. Nullam faucibus tellus ac neque rutrum ultricies. Mauris at bibendum elit. Sed finibus nisl ultricies pulvinar convallis. Phasellus imperdiet cursus sapien, in ultrices nibh hendrerit et. In sed condimentum sem, vitae porttitor diam. Sed at maximus leo. Integer id eros nec est dignissim vehicula. Sed velit diam, cursus vel bibendum eget, rutrum a diam.&lt;/p&gt;</code>
+            </p>
+    <h1>VI. HTML Styles</h1>
+        <h2>1. Ý nghĩa</h2>
+            <p>
+                Thuộc tính HTML styleđược sử dụng để thêm kiểu cho một phần tử, chẳng hạn như màu sắc, phông chữ, kích thước, v.v.
+            </p>
+        <h2>2. Ví dụ minh họa</h2>
+            <p>
+                <code style="color: red;">&lt;p style="color: red;"&gt;Roses are red&lt;/p&gt;</code><br>
+                <code style="color: blue;">&lt;p style="color: blue;"&gt;Violets are blue&lt;/p&gt;</code>
+            </p><hr>
+    <h1>VII. HTML Formatting</h1>
+        <h2>1. Ý nghĩa</h2>
+            <p>
+                HTML chứa một số phần tử để xác định văn bản có ý nghĩa đặc biệt.
+            </p>
+        <h2>2. Ví dụ minh họa</h2>
+            <p>
+                <code><b>&lt;b&gt;bold&lt;/b&gt;</b> <i>&lt;i&gt;italic&lt;/i&gt;</i></code>
+            </p><hr>
+    <h1>VIII. HTML Quotatios</h1>
+        <h2>1. Ý nghĩa</h2>
+            <h3 style="margin-left: 40px;">Thành phần trích dẫn khối (&lt;blockquote&gt;)</h3>
+                <p style="margin-left: 60px;">Thành phần &lt;blockquote&gt; được sử dụng để chỉ định một trích dẫn khối, là một trích dẫn dài được tách biệt với văn bản xung quanh. Nó thường hiển thị văn bản được trích dẫn với lùi đầu dòng và kiểu chữ khác để phân biệt nó với phần chính của tài liệu.</p>
+            <h3 style="margin-left: 40px;">Thành phần trích dẫn nội tuyến (&lt;q&gt;)</h3>
+                <p style="margin-left: 60px;">Thành phần &lt;q&gt; được sử dụng để chỉ định một trích dẫn nội tuyến, là một trích dẫn ngắn được nhúng trong phần chính của văn bản. Nó thường hiển thị văn bản được trích dẫn trong dấu ngoặc kép để phân biệt nó với văn bản xung quanh.</p>
+            <h3 style="margin-left: 40px;">Thành phần trích dẫn (&lt;cite&gt;)</h3>
+                <p style="margin-left: 60px;">Thành phần &lt;cite&gt; được sử dụng để cung cấp tiêu đề của một tác phẩm sáng tạo, chẳng hạn như sách, bài thơ, bài hát, phim, bức tranh hoặc tác phẩm điêu khắc. Nó thường hiển thị tiêu đề in nghiêng để phân biệt nó với văn bản xung quanh.</p>
+        <h2>2. Ví dụ minh họa</h2>
+        <blockquote>
+            <p>Như Mark Twain từng nói, "Cách tốt nhất để dự đoán tương lai là tạo ra nó."</p>
+            <cite>~ Mark Twain, "Những cuộc phiêu lưu của Tom Sawyer"</cite>
+        </blockquote>
+            
+        <p>"Kiến thức là sức mạnh," Francis Bacon tuyên bố.</p>
+        <cite>~ Francis Bacon, "Suy ngẫm"</cite><hr>
+    <h1>IX. HTML Comments</h1>
+        <h2>1. Ý nghĩa</h2>
+            <p>
+                Comments HTML không được hiển thị trong trình duyệt nhưng chúng có thể giúp ghi lại mã nguồn HTML của bạn.
+            </p>
+        <h2>2. Ví dụ minh họa</h2>
+            <p>
+                <code>&lt;!-- comments here --&gt;</code>
+            </p><hr>
+    <h1>X. HTML Colors</h1>
+        <h2>1. Ý nghĩa</h2>
+            <p>
+                Màu HTML được chỉ định bằng tên màu được xác định trước hoặc bằng các giá trị RGB, HEX, HSL, RGBA hoặc HSLA.
+            </p>
+        <h2>2. VÍ dụ minh họa</h2>
+            <p>
+                <code style="color: #334eac;">&lt;p slyte="color: #bd93f9;"&gt;Royal&lt;/p&gt;</code>
+            </p><hr>
+    <h1>XI. HTML Links</h1>
+        <h2>1. Ý nghĩa</h2>
+            <p>
+                Các liên kết được tìm thấy ở hầu hết các trang web. Liên kết cho phép người dùng nhấp chuột từ trang này sang trang khác.
+            </p>
+        <h2>2. Ví dụ minh họa</h2>
+            <p>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><code>&lt;a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">luv&lt;/a&gt;</code></a>
+            </p><hr>
+    <h1>XII. HTML Images</h1>
+        <h2>1. Ý nghĩa</h2>
+            <p>
+                Hình ảnh có thể cải thiện thiết kế và sự xuất hiện của một trang web.
+            </p>
+        <h2>2. Ví dụ minh họa</h2>
+            <p>
+                <code>&lt;img src="https://i.pinimg.com/564x/8a/01/a2/8a01a24c70ad083e0300b30561ef592b.jpg" alt="color palette" style="width: 500px;"&gt;</code>
+                <img src="https://i.pinimg.com/564x/8a/01/a2/8a01a24c70ad083e0300b30561ef592b.jpg" alt="color palette" style="width: 500px;">
+            </p><hr>
+    <h1>XIII. HTML Tables</h1>
+        <h2>1. Ý nghĩa</h2>
+            <p>
+                Bảng HTML cho phép các nhà phát triển web sắp xếp dữ liệu thành hàng và cột.
+            </p>
+        <h2>2. Ví dụ minh họa</h2>
+            <p>
+                <code>&lt;table&gt;</code><br>
+                <code style="margin-left: 40px;">&lt;tr&gt;</code><br>
+                <code style="margin-left: 60px;">&lt;th&gt;xoxox&lt;/th&gt;</code><br>
+                <code style="margin-left: 60px;">&lt;th&gt;xoxox&lt;/th&gt;</code><br>
+                <code style="margin-left: 40px;">&lt;/tr&gt;</code><br>
+                <code style="margin-left: 40px;">&lt;tr&gt;</code><br>
+                <code style="margin-left: 60px;">&lt;td&gt;01010&lt;/td&gt;</code><br>
+                <code style="margin-left: 60px;">&lt;td&gt;10101&lt;/td&gt;</code><br>
+                <code style="margin-left: 4cqmax;">&lt;/tr&gt;</code><br>
+                <code>&lt;/table&gt;</code>
+                <table style="width: 100%;">
+                    <tr>
+                        <th>xoxox</th>
+                        <th>oxoxo</th>
+                    </tr>
+                    <tr>
+                        <td>01010</td>
+                        <td>10101</td>
+                    </tr>
+                </table>
+            </p><hr>
+    <h1>XIV. HTML Lists</h1>
+        <h2>1. Ý nghĩa</h2>
+            <p>
+                Danh sách HTML cho phép các nhà phát triển web nhóm một tập hợp các mục liên quan vào danh sách.
+            </p>
+        <h2>2. Ví dụ minh họa</h2>
+            <p>
+                <code>&lt;ul&gt;</code><br>
+                <code style="margin-left: 40px;">&lt;li&gt;Đen đá&lt;/li&gt;</code><br>
+                <code style="margin-left: 40px;">&lt;li&gt;Nâu&lt;/li&gt;</code><br>
+                <code style="margin-left: 40px;">&lt;li&gt;Bạc xỉu&lt;/li&gt;</code><br>
+                <code>&lt;/ul&gt;</code>
+                <ul>
+                    <li>Đen đá</li>
+                    <li>Nâu</li>
+                    <li>Bạc xỉu</li>
+                </ul>
+            </p>
+            <p>
+                <code>&lt;ol&gt;</code><br>
+                <code style="margin-left: 40px;">&lt;li&gt;Đen đá&lt;/li&gt;</code><br>
+                <code style="margin-left: 40px;">&lt;li&gt;Nâu&lt;/li&gt;</code><br>
+                <code style="margin-left: 40px;">&lt;li&gt;Bạc xỉu&lt;/li&gt;</code><br>
+                <code>&lt;/ol&gt;</code>
+                <ol>
+                    <li>Đen đá</li>
+                    <li>Nâu</li>
+                    <li>Bạc xỉu</li>
+                </ol>
+            </p><hr>
+    <h1>XV. HTML Block & Inline</h1>
+        <h2>1. Ý nghĩa</h2>
+            <p>
+                Mọi phần tử HTML đều có giá trị hiển thị mặc định, tùy thuộc vào loại phần tử đó.<br>
+                Hai giá trị hiển thị phổ biến nhất là khối và nội tuyến.
+            </p>
+        <h2>2. Ví dụ minh họa</h2>
+        <p>
+            <code>&lt;div style="background-color:#d0e3ff;padding:20px;"&gt;</code><br>
+            <code style="margin-left: 40px;">&lt;h2&gt;Lorem ipsum&lt;h2&gt;</code><br>
+            <code style="margin-left: 40px;">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt sed elit vitae rhoncus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque bibendum ipsum diam, sit amet viverra sapien laoreet sed. Nullam faucibus tellus ac neque rutrum ultricies. Mauris at bibendum elit. Sed finibus nisl ultricies pulvinar convallis. Phasellus imperdiet cursus sapien, in ultrices nibh hendrerit et. In sed condimentum sem, vitae porttitor diam. Sed at maximus leo. Integer id eros nec est dignissim vehicula. Sed velit diam, cursus vel bibendum eget, rutrum a diam.&lt;/p&gt;</code><br>
+            <code>&lt;/div&gt;</code>
+        </p>
+        <p>
+            <div style="background-color:#d0e3ff;padding:20px;">
+                <h2>Lorem ipsum</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt sed elit vitae rhoncus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque bibendum ipsum diam, sit amet viverra sapien laoreet sed. Nullam faucibus tellus ac neque rutrum ultricies. Mauris at bibendum elit. Sed finibus nisl ultricies pulvinar convallis. Phasellus imperdiet cursus sapien, in ultrices nibh hendrerit et. In sed condimentum sem, vitae porttitor diam. Sed at maximus leo. Integer id eros nec est dignissim vehicula. Sed velit diam, cursus vel bibendum eget, rutrum a diam.</p>
+            </div>            
+        </p>
+        <p>
+            <code>Roses are &lt;span style="color: red;"&gt;red&lt;/span&gt;</code><br>
+            <code>Violets are &lt;span style="color: blue;"&gt;blue&lt;/span&gt;</code>
+        </p>
+        <p>
+            Roses are <span style="color: red;">red</span><br>
+            Violets are <span style="color: blue;">blue</span>
+        </p><hr>
+
+</body>
+</html>

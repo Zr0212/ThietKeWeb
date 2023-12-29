@@ -1,0 +1,89 @@
+* {
+    background-color: #000000;
+    color: #0d0b89;
+    box-sizing: border-box;
+}
+h1, h2, h3{
+    background-color: #00000000;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+p, li {
+    background-color: #00000000;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+ul, ol, li, a{
+    text-decoration: none;
+    background-color: #e4e0c6;
+}
+ul ul {
+    display: none;
+    position: absolute;
+}
+li:hover > ul {
+    display: block;
+}
+ul {
+    list-style-type: none;
+    display: flex;
+}
+a:link, a:visited {
+    color: #0d0b89;
+}
+a:hover {
+    color: #000000;
+}
+.glassblur{
+    position: fixed;
+    background: rgba(255, 255, 255, 0);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.2px);
+    -webkit-backdrop-filter: blur(8.2px);
+}
+.backimg {
+    border-radius: 0px 70px 70px 0px;
+}
+.background1 {
+    background-color: #e4e0c6;
+    background-image: url(img/img.jpg);
+    background-size: cover;
+    height: 700px;
+    min-height: 700px;
+    flex: 56%;
+    padding: 20px;
+    border-radius: 0vw 10vw 10vw 0vw;
+    margin: 20px;
+}
+.background2 {
+    background-color: #e4e0c6;
+    border-radius: 10vw 5vw 0vw 10vw;
+    flex: 36%;
+    padding: 20px;
+    margin: 20px;
+}
+.background3 {
+    background-color: #e4e0c6;
+    border-radius: 0vw 0vw 5vw 5vw;
+    min-height: 350px;
+    padding: 20px;
+    margin: 20px;
+}
+.back {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #00000000;
+}
+.col{
+    flex: 33.3%;
+    max-width: 33.3;
+    padding: 20px;
+    background-color: #00000000;
+    height: 40px;
+}
+@media (max-width: 800px) {
+    .back {
+      flex-direction: column;
+    }
+}  
