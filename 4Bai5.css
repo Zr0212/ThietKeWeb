@@ -1,7 +1,13 @@
+@font-face {
+    font-family: wacks;
+    src: url(OpenType-PS/DFVN\ Fashion\ Wacks.otf);
+    font-weight: normal;
+    font-weight: normal;
+}
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Merriweather', serif;
+    font-family: wacks;
     background-color: #000000;
     color: #0d0b89;
     transition: 0.4s;
@@ -17,9 +23,12 @@ body {
     margin: 50px calc((100% - 1200px)/2);
 }
 h1{
-    font-size: 60px;
+    font-size: 75px;
     text-align: center;
     margin: 0;
+    padding: 20px 0;
+}
+h2{
     padding: 20px 0;
 }
 p{
@@ -47,9 +56,9 @@ p{
     padding: 14px 40px;
     text-decoration: none;
     border-radius: 30px;
-    font-family: 'Merriweather', serif;
+    font-family: wacks;
+    font-size: 24px;
 }
-
 #bar li a:hover{
   background-color: #0d0b89;
 }
@@ -80,11 +89,11 @@ p{
     width: 600px;
     height: 600px;
 }
-.bo, .elip{
+.bo, .elip, .hehe{
     position: relative;
     overflow: hidden;
 }
-.bo .lop1, .anh, .anhh, .anhhh, .ee, .eee, .star{
+.bo .lop1, .anh, .anhh, .anhhh, .ee, .eee, .star, .mm{
     top:0;
     left:0;
     position: absolute;
@@ -94,7 +103,7 @@ p{
     position: absolute;
     top:0;
     left:0;
-    background-color: black;
+    background-color: #000000;
 }
 .bo:hover .lop2{
     opacity: 0.5;
@@ -102,9 +111,6 @@ p{
 .bo .lop3{
     position: absolute;
     display: flex;
-    justify-content: space-around;
-    color: white;
-    font-size: 20px;
     opacity:1;
 }
 .bo:hover .lop3{
@@ -156,15 +162,66 @@ p{
     background-size: cover;
 }
 #hm1{
-    background-image: url(img/img.jpg);
-    background-size: cover;
-    background-position: center;
     height: 370px;
     width: 590px;
     margin: 0 0 10px 0;
     border-radius: 100px 0;
+    overflow: hidden;
 }
-
+.hehe, .mm{
+    height: 370px;
+    width: 590px;
+}
+.stars, .stars1, .stars2, .stars3{
+    opacity: 0.5;
+    position: relative;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.stars{
+    width: 200px;
+    height: 200px;
+    animation-name: star;
+    animation-duration: 1.25s;
+    animation-direction: alternate;
+}
+@keyframes star{
+    0%   {transform: rotate(0deg); left: -200px; top: -50px;}
+    100%  {transform: rotate(360deg); left: 590px; top: -50px;}
+}
+.stars1{
+    width: 400px;
+    height: 400px;
+    animation-name: star1;
+    animation-duration: 5.12s;
+    animation-direction: alternate-reverse;
+}
+@keyframes star1{
+    0%   {transform: rotate(0deg); left: -400px; top: -100px;}
+    100%  {transform: rotate(360deg); left: 590px; top: -100px;}
+}
+.stars2{
+    width: 160px;
+    height: 160px;
+    animation-name: star2;
+    animation-duration: 3.2s;
+    animation-direction: alternate-reverse;
+}
+@keyframes star2{
+    0%   {transform: rotate(0deg); left: -600px; top: -400px;}
+    100%  {transform: rotate(360deg); left: 200px; top: -400px;}
+}
+.stars3{
+    width: 80px;
+    height: 80px;
+    animation-name: star3;
+    animation-duration: 2s;
+    animation-direction: alternate-reverse;
+}
+@keyframes star3{
+    0%   {transform: rotate(0deg); left: -100px; top: -400px;}
+    100%  {transform: rotate(360deg); left: 600px; top: -400px;}
+}
 #hm2{
     background-color: #e4e0c6;
     border-radius: 0 100px 0 0;
@@ -220,7 +277,7 @@ p{
     background-color: #00000000;
     height: auto;
     flex-grow: 1;
-    padding: 0 20px;
+    padding: 20px;
 }
 .back .col{
     display: flex;
@@ -246,12 +303,13 @@ a {
     width: 100%;
     position: relative;
     border-radius: 100px;
-
+    font-size: 24px;
 }
 #media{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    padding: 20px;
 }
 .medi{
     border-radius: 20px;
@@ -315,6 +373,10 @@ a.medi:hover:after, a.bt:hover:after{
     #hm1{
         height: 307px;
     }
+    .hehe, .mm{
+        height: 307px;
+        width: 490px;
+    }
     #hm2{
         height: 183px;
     }
@@ -339,6 +401,10 @@ a.medi:hover:after, a.bt:hover:after{
     }
     #hm1{
         height: 244.6px;
+    }
+    .hehe, .mm{
+        height: 224.6px;
+        width: 390px;
     }
     #hm2{
         height: 145.4px;
