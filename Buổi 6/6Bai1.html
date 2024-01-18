@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="6Bai1.css">
+</head>
+<body>
+    <div class="form">
+        <h1>FORM ĐĂNG KÝ</h1>
+        <form action="" onsubmit=" return validateForm()">
+            <p>Họ <input type="text" id="textho" size="20" required></p>
+            <p>Tên <input type="text" id="textten" size="20" required></p>
+            <p for="dob">Ngày Sinh:
+                <label>Ngày <select id="dobDay"></select></label>
+                <label>Tháng <select id="dobMonth"></select></label>
+                <label>Năm <select id="dobYear"></select></label>
+            </p>
+            <p>Giới tính
+                <input type="radio" value="Nam" name="rdNam" checked="checked"/>Nam
+                <input type="radio" value="Nu" name="rdNu"/>Nữ
+            </p>
+            <p>Số điện thoại <input type="text" id="dienthoai" required></p>
+            <p>Sở thích
+                <input type="checkbox"/> 
+            </p>
+        </form>
+    </div>
+    <script src="6Bai1.js"></script>
+</body>
+</html>
