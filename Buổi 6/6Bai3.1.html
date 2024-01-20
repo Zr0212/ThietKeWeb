@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 3.1</title>
+    <style>
+        *{
+            transition: 0.4s;
+        }
+    </style>
+</head>
+<body>
+    <div style="width: 200px; height: 80px; display: flex;justify-content: center;" id="doi">
+        <p style="font-size: 30px;">Đổi màu tôi đi</p>
+    </div>
+    <button onclick="doimau();" style="width: 100px; height: 40px; font-size: 30px; color: #9ac5e3; border: none; background-color: #254162; transform: translate(50px,10px); border-radius: 10px;">Xanh</button>
+    <script>
+        function doimau(){
+            document.getElementById("doi").style.backgroundColor="#9ac5e3";
+            document.getElementById("doi").style.color="#254162";
+        }
+    </script>
+</body>
+</html>

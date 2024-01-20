@@ -3,30 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="6Bai1.css">
+    <title>Bài 1</title>
 </head>
 <body>
-    <div class="form">
-        <h1>FORM ĐĂNG KÝ</h1>
-        <form action="" onsubmit=" return validateForm()">
-            <p>Họ <input type="text" id="textho" size="20" required></p>
-            <p>Tên <input type="text" id="textten" size="20" required></p>
-            <p for="dob">Ngày Sinh:
-                <label>Ngày <select id="dobDay"></select></label>
-                <label>Tháng <select id="dobMonth"></select></label>
-                <label>Năm <select id="dobYear"></select></label>
-            </p>
-            <p>Giới tính
-                <input type="radio" value="Nam" name="rdNam" checked="checked"/>Nam
-                <input type="radio" value="Nu" name="rdNu"/>Nữ
-            </p>
-            <p>Số điện thoại <input type="text" id="dienthoai" required></p>
-            <p>Sở thích
-                <input type="checkbox"/> 
-            </p>
-        </form>
-    </div>
+    <h1>FORM ĐĂNG KÝ</h1>
+    <form name="Form" onsubmit="return validateForm()" method="post">
+        <p>Họ <input type='text' name='txtho' style="margin-left: 5px;"></p>
+        <p>Tên <input type='text' name='txtten'></p>
+        <p>Ngày sinh:
+            Ngày <select style="cursor: pointer;" size="1" id="ngay"></select> 
+            Tháng <select style="cursor: pointer;" size="1" id="thang" ></select>
+            Năm <select style="cursor: pointer;" size="1" id="nam" ></select> 
+        </p>
+        <p>Giới tính
+            <input style="cursor: pointer;" type="radio" value="Nam" name="rdSize" checked="checked"/>Nam
+            <input style="cursor: pointer;" type="radio" value="Nu" name="rdSize"/>Nữ
+        </p>
+        <p>Số điện thoại
+            <input type="text" id="txtdienthoai">
+        </p>
+        <p>Sở thích
+            <input style="cursor: pointer;" type="checkbox" value="Docsach" name="ckSize" checked="checked"/>Đọc sách
+            <input style="cursor: pointer;" type="checkbox" value="Xemphim" name="ckSize"/>Xem phim
+            <input style="cursor: pointer;" type="checkbox" value="Nghenhac" name="ckSize"/>Nghe nhạc
+            <input style="cursor: pointer;" type="checkbox" value="Dabong" name="ckSize"/>Đá bóng
+        </p>
+        <p>Khác
+            <textarea style="height: 30px; width: 150px;" name="content" placeholder=""></textarea>
+        </p>
+        <div style="display: flex;">
+        <input type='submit' id='' name='' value="Submit" style="margin-right: 10px;">
+        <input type='reset' id='' name='' value="Reset">
+        </div>
+    </form>
     <script src="6Bai1.js"></script>
 </body>
 </html>

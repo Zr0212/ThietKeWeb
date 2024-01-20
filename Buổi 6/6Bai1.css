@@ -1,5 +1,11 @@
-.form{
-    background-color: aqua;
-    margin: 20px;
-    height: 500px;
+*{
+    padding: 0;
+    transition: 0.4s;
+}
+body{
+    margin: 80px calc((100% - 400px)/2);
+}
+div input{
+    padding: 5px;
+    cursor: pointer;
 }
