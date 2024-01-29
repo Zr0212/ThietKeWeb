@@ -1,0 +1,24 @@
+.topnav {
+  overflow: hidden;
+  background-color: #2980b9;
+  position: relative;
+  width: 180px;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  background-color: #f1f1f1;
+  color: #000000;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
