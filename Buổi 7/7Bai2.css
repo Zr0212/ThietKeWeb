@@ -48,9 +48,51 @@ p{
     backdrop-filter: blur(10.3px);
     position: relative;
 }
-.topnav #myLinks {
-    display: none;
+#myLinks {
+    display: block;
 }
+.sidebar {
+    height: 240px;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0);
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.3px);
+    overflow-x: hidden;
+    padding-top: 60px;
+}
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #f0d25b;
+    display: block;
+    transition: 0.3s;
+}
+  
+.sidebar a:hover {
+    transform: scale(1.2);
+}
+  
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 24px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+  
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #00000000;
+    color: #f0d25b;
+    padding: 10px 15px;
+    border: none;
+}  
 .topnav a {
     padding: 12px;
     text-decoration: none;
